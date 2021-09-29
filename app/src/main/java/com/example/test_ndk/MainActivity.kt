@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
 
     private suspend fun createDatabase() {
 
-        coroutineScope {
+        /*coroutineScope {
             launch {
                 val appDatabase: AppDatabase = AppDatabase.getDatabase(applicationContext)
                 appDatabase.let {
@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
                     it.userDao().insertAll(user)
                 }
             }
-        }
+        }*/
         /*runBlocking {
             launch {
                 val appDatabase: AppDatabase = AppDatabase.getDatabase(applicationContext)
